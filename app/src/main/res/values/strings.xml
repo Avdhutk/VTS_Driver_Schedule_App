@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LiveTrack</string>
+    <string name="pref_previously_started" />
+    <string name="title_activity_driver_home">Daily Schedule</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Refresh</string>
+    <string name="title_activity_home">Home</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_driver_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorAccent"
+    tools:context="com.a3sj.vts.retrofitpostexample.DriverLogin"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="350dp"
+        app:srcCompat="@drawable/bus"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="180dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="Enter Email-ID"
+        android:textColorHint="#808080"
+        android:background="@drawable/back"
+        android:id="@+id/editTextEmail"
+        android:layout_alignBottom="@+id/editTextPassword"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:layout_marginBottom="58dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:textColorHint="#808080"
+        android:background="@drawable/back"
+        android:id="@+id/editTextPassword"
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:textAlignment="center"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="36dp" />
+
+    <Button
+        android:text="LOGIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:id="@+id/buttonLogin"
+        android:textSize="30dp"
+        android:textStyle=""
+        android:layout_marginBottom="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/imageView" />
+
+
+</RelativeLayout>

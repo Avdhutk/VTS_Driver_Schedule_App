@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="6dip"
+        android:paddingTop="5dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/bus1" />
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toEndOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="Example application"
+        android:textColor="#D8000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/firstSubTitleDesc"
+        android:layout_width="wrap_content"
+        android:textAlignment="viewStart"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/listTitle"
+        android:layout_toEndOf="@id/icon"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#D8000000"
+        android:text="TIME: "
+        android:textStyle="bold"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/firstSubTitleLine"
+        android:layout_width="wrap_content"
+        android:textAlignment="viewStart"
+        android:layout_height="26dip"
+        android:layout_below="@id/listTitle"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/firstSubTitleDesc"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#D8000000"
+        android:text="Description"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/secondSubTitleDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:textAlignment="viewEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/firstSubTitleLine"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:layout_below="@id/listTitle"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#D8000000"
+        android:textStyle="bold"
+        android:text="BUS NO: "
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/secondSubTitleLine"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:textAlignment="viewEnd"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/secondSubTitleDesc"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:layout_below="@id/listTitle"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textColor="#D8000000"
+        android:text="Description"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
